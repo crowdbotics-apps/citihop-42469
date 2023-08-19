@@ -1,7 +1,10 @@
+import { Pressable } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import React, { useState } from 'react';
 import { SafeAreaView, View, TextInput, Button, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 
 const SignUpScreen = () => {
+  const navigation = useNavigation();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [termsAccepted, setTermsAccepted] = useState(false);
@@ -15,13 +18,19 @@ const SignUpScreen = () => {
         <Button title={termsAccepted ? '✔' : '✖'} onPress={() => setTermsAccepted(!termsAccepted)} />
         <Text style={styles.label}>
           I accept the 
-          <Text style={styles.link} onPress={() => {}}> Terms and Conditions </Text>
+          <Pressable onPress={() => {
+          navigation.navigate("ScreenAI4");
+        }}><Text style={styles.link} onPress={() => {}}> Terms and Conditions </Text></Pressable>
           and 
-          <Text style={styles.link} onPress={() => {}}> Privacy Policy</Text>
+          <Pressable onPress={() => {
+          navigation.navigate("ScreenAI5");
+        }}><Text style={styles.link} onPress={() => {}}> Privacy Policy</Text></Pressable>
         </Text>
       </View>
       <Button title="Sign Up" onPress={() => {}} />
-      <TouchableOpacity onPress={() => {}}>
+      <TouchableOpacity onPress={() => {
+      navigation.navigate("ScreenAI6");
+    }}>
         <Text style={styles.forgotPassword}>Forgot Password?</Text>
       </TouchableOpacity>
     </SafeAreaView>;
