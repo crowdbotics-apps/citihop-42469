@@ -1,10 +1,11 @@
 export const globalOptions = {
-  name: "morning-field-42469",
-  url: "https://morning-field-42469.botics.co",
-  api: "https://morning-field-42469.botics.co/api/v1",
-  screenOptions: {
-    headerShown: false
-  }
+  "name": "morning-field-42469",
+  "url": "https://morning-field-42469.botics.co",
+  "api": "https://morning-field-42469.botics.co/api/v1",
+  "screenOptions": {
+    "headerShown": false
+  },
+  "initialRoute": "ScreenAI10"
 };
 export const modulesOptions = {
   "@modules/app-menu": {
