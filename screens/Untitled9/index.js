@@ -18,7 +18,13 @@ const Untitled9 = () => {
         navigation.navigate("ScreenAI12");
       }}><Text style={styles.nujwulAQ}>{"settings"}</Text></Pressable><Pressable onPress={() => {
         navigation.navigate("ScreenAI17");
-      }}><Text style={styles.WnShgEVU}>{"Set Check-in option"}</Text></Pressable></ScrollView>
+      }}><Text style={styles.WnShgEVU}>{"Set Check-in option"}</Text></Pressable><Pressable onPress={() => {
+        navigation.navigate("ScreenAI19");
+      }}><Text style={styles.XIujHZSh}>{"Specific Place"}</Text></Pressable><Pressable onPress={() => {
+        navigation.navigate("ScreenAI18");
+      }}><Text style={styles.mkhoOBIn}>{"My Favorite Place"}</Text></Pressable><Pressable onPress={() => {
+        navigation.navigate("ScreenAI23");
+      }}><Text style={styles.NdtNsZqU}>{"My Uploads"}</Text></Pressable></ScrollView>
     </SafeAreaView>;
 };
 
@@ -41,6 +47,27 @@ const styles = StyleSheet.create({
     borderRadius: 0
   },
   WnShgEVU: {
+    width: 100,
+    height: 50,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0
+  },
+  XIujHZSh: {
+    width: 100,
+    height: 50,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0
+  },
+  mkhoOBIn: {
+    width: 100,
+    height: 50,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0
+  },
+  NdtNsZqU: {
     width: 100,
     height: 50,
     lineHeight: 14,
